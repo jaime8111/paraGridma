@@ -1,0 +1,110 @@
+####################################################################
+####################################################################
+
+HAY UN DOCUMENTO EN EL DRIVE QUE HABLA EN DETALLE SOBRE PARAGRIDMA
+
+####################################################################
+####################################################################
+
+ParaGRIDma v3
+Fluid CSS & JS Framework from Paradigma Tecnologico
+
+Task:
+----------------
+* Grid system
+	- normalize.css
+	- mobile first
+	- less
+	- set posible media queries
+
+* Form
+	- Style to search input
+	- input + button
+	- buttons with icons from font awesome
+
+Bases:
+----------------
+
+* Editable with LESS (like: http://foundation.zurb.com/download.php)
+	- grid dimensions
+	- main colors
+	- font-size, font-family, line-height
+
+* Mobile first
+	- JS function to adapt text size to its parent width
+		- Using CSS Viewport Units: vw, vh, vmax, and vmin. (http://tympanus.net/codrops/2013/11/19/techniques-for-responsive-typography/)
+			The viewport-percentage lengths are relative to the size of the initial containing block. When the height or width of the initial containing block is changed, they are scaled accordingly.
+				1vw = Equal to 1% of the width of the initial containing block.
+				1vh = Equal to 1% of the height of the initial containing block.
+				1vmin = Equal to the smaller of ‘vw’ or ‘vh’
+				1vmax = Equal to the larger of ‘vw’ or ‘vh’.
+
+* Focus on load times:
+	- mobile version will only load required CSS.
+	- Full version will load rest of CSS
+
+* Use normalize.css instead of reset.css (https://github.com/necolas/normalize.css)
+
+* You can download
+	- the paraGRIDma core (normalize, grid, and default CSS)
+	- full package: with all the add ons
+
+* It must be 100% fluid (columns, fields, buttons, images, ...)
+	- layout could have and max-width
+
+* Width diferent browser widths framework would:
+	- use media-queries
+
+* Panels:
+	- fix + fluid
+	- split-columns on small displays sizes
+	- centered panels
+
+* Responsive tables
+	- http://foundation.zurb.com/responsive-tables.php
+
+* Javascript will:
+	- improve image render (imgsizer.js --> http://unstoppablerobotninja.com/entry/fluid-images/ )
+	- Improve media-queries support https://github.com/scottjehl/Respond
+	- Improve CSS selectors (http://selectivizr.com/)
+
+* Fluid paraGRIDma v2 is inspired by:
+	- paraGRIDma v2
+	- Bootstrap 3
+	- Foundation: http://foundation.zurb.com/
+	- PureCSS: http://purecss.io/
+	- Rock Hammer (Aka: 320 and up): http://malarkey.github.io/Rock-Hammer/
+	- fluid 960 gs: http://designinfluences.com/fluid960gs/
+	- Zimit: http://firezenk.github.io/zimit/
+	- sculpt: http://www.heartinternet.co.uk/sculpt
+
+* Browser support:
+	- HTML5 browser
+	- IE7 & IE8 with limitations
+
+* Add on to responsible images:
+	- redimension tool to load small image by default, and after that load the best posible image through Javascript
+
+* Font icons integration
+	- Integration with font-awesome
+
+
+DOCUMENTATION:
+---------------
+
+Show a naked default structure page
+
+Show how to disabled responsive layout
+
+The grid has three key elements:
+	- container: create base padding for the page
+	- rows: create a max-width and contain the columns
+	- columns
+
+
+
+
+
+
+
+

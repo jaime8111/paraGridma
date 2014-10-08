@@ -1,0 +1,111 @@
+.demoPanel {
+    background: #f4f4f4;
+    background-color: rgba(209, 209, 209, 0.33);
+    border: #ccc;
+    padding:20px;
+    margin-bottom: 40px;
+}
+    .demoPanel.nm {
+        margin-bottom: 0;
+    }
+    .demoPanel.np { padding: 0;}
+
+
+.sectionHeader {
+    border-bottom: solid 1px #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+}
+
+#fixedBar, #fixedBar.opened, #fixedBar .content {
+    width: 200px;
+}
+#fixedBar {
+    margin-left: 0;
+    background-color: #ECF2F7;
+    height: 100%;
+    border-right: solid 1px #D0DEE9;
+
+    z-index: 8;
+    position: fixed;
+    top:0;
+    left: 0;
+
+    transition-property:margin;
+    -moz-transition-property: margin; /* Firefox 4 */
+    -webkit-transition-property:margin; /* Safari and Chrome */
+    -o-transition-property:margin; /* Opera */
+
+    transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+}
+
+    #fixedBar.opened {
+        margin-left: 0;
+    }
+    #fixedBar li {
+        margin: 0;
+
+    }
+    #fixedBar a {
+        text-decoration: none;
+        color:#555;
+        font-size: 16px;
+        padding: 0.5em 1em;
+        display: block;
+    }
+        #fixedBar ul a:hover {
+            background-color: #D0DEE9;
+        }
+        #fixedBar ul a.active {
+            background-color: #12C4E8;
+            color: #fff;
+            position: relative;
+        }
+            #fixedBar ul a.active:after {
+                position: absolute;
+                content: " ";
+                top: 0;
+                right: -20px;
+                border-bottom: 20px solid transparent;
+                border-top: 20px solid transparent;
+                border-left: 20px solid #12C4E8;
+            }
+        #fixedBar #logoWrap {
+            padding: 20px 20px 0;
+        }
+    #toggleFixedBar {
+        background-color: #ECF2F7;
+        display: block;
+        width: 52px;
+        height: 44px;
+        text-indent: -5000px;
+
+        border-right: solid 1px #D0DEE9;
+        border-bottom: solid 1px #D0DEE9;
+
+        position: absolute;
+        z-index: 9;
+        top:0;
+        right: -52px;
+    }
+
+#sectionsContent {
+    margin-left: 220px;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    #fixedBar {
+        margin-left: -200px;
+    }
+    #sectionsContent {
+        margin-left: 0;
+    }
+    #fixedBar ul a.active:after {
+        display: none;
+    }
+}
