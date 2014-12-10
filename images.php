@@ -7,9 +7,8 @@
 
     <h3 class="h4 title">Responsive Images</h3>
     <div class="todo">
-        <p>TODO: We are working in a innovative system to display images in a responsive way</p>
-        <p><strong>INSPIRATION:</strong>
-            Create Images: https://code.google.com/p/timthumb/<br/>
+        <p>Work in progress.</p>
+        <p>You can see it in <a href="http://www.vissit.com/attempt-to-get-responsive-images/" target="_blank">this post.</a>
         </p>
     </div>
     <p>We know several libraries that offer this feature, but none of them fix our needs completly. We need a solution that:</p>
